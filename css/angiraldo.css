@@ -186,6 +186,24 @@ background-color: #FFDFA2;
   width: 40%;
 }
 
+.marca-item .icons-redes i {
+  border: 2px solid #551a8b;
+  border-radius: 50%;
+  color: #551a8b;
+  height: 20px;
+  padding: 8px;
+  width: 20px;
+  font-size: 25px;
+  line-height: 20px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.marca-item .icons-redes i:hover {
+  background-color: #551a8b;
+  color: #FFF;
+}
+
 .marca-item h4 {
   font-style: italic;
   margin-top: 0;
@@ -247,7 +265,7 @@ background-color: #FFDFA2;
   margin-top: 1em;
 }
 
-.contacto-detalle a, .contacto-detalle ul {
+.contacto-detalle a {
   display: block;
   text-align: left;
 }
@@ -259,7 +277,15 @@ background-color: #FFDFA2;
 
 .contacto-detalle a strong {
   margin-right: 10px;
-  text-decoration: underline;
+}
+
+.contacto-detalle a:nth-child(2) span {
+  margin-left: 16px;
+}
+
+.contacto-detalle .icons-redes {
+  display: block;
+  text-align: center;
 }
 
 .formulario {
