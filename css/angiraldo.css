@@ -65,6 +65,7 @@ background-color: #FFDFA2;
   text-decoration: none;
   transition: border-color .3s;
   border-color: #FFF;
+  outline: 0;
 }
 
 .menu li a:hover {
@@ -313,11 +314,9 @@ background-color: #FFDFA2;
 .contacto-detalle a {
   display: block;
   text-align: left;
-}
-
-.contacto-detalle a {
   color: white;
   text-decoration: none;
+  outline: 0;
 }
 
 .contacto-detalle a strong {
