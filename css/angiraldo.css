@@ -32,6 +32,7 @@ background-color: #FFDFA2;
 }
 
 .header {
+  box-shadow: 0 0 5px #888585;
   color: white;
   height: 50px;
   position: relative;
@@ -134,23 +135,22 @@ background-color: #FFDFA2;
   color: #f3723b;
 }
 
-.titulo.morado:after {
-  color: #7b057e;
+.subtitulo {
+  text-align: center;
+  font-size: 23px;
+  margin: 0;
+  margin-bottom: 1em;
 }
 
-.foto-perfil {
-  display: inline-block;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  margin-top: -100px;
-  width: 50%;
+.acerca .contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .foto-perfil img {
-  border-radius: 10%;
-  width: 200px;
   border: 3px solid #f3723b;
+  border-radius: 10%;
   padding: 4px;
 }
 
@@ -158,6 +158,10 @@ background-color: #FFDFA2;
   display: inline-block;
   float: right;
   width: 50%;
+}
+
+.descripcion span {
+  color: #e11379;
 }
 
 .descripcion p:first-child {
@@ -168,20 +172,17 @@ background-color: #FFDFA2;
   padding-bottom: 0;
 }
 
-.portafolio .background-pastel {
-  margin-bottom: 30px;
-}
-
 .portafolio .contenedor {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .portafolio-item {
   background-color: white;
+  box-shadow: 0 0 10px #888585;
   margin-bottom: 2em;
-  width: 30%;
+  width: 45%;
 }
 
 .portafolio-item div:first-child {
@@ -216,18 +217,20 @@ background-color: #FFDFA2;
   font-weight: normal;
 }
 
-.marcas .contenedor {
-  display: flex;
-  justify-content: space-around;
-}
-
 .marca-title {
   font-size: 20px;
   margin-bottom: .5em;
   text-align: center;
 }
 
+.background-gift {
+  background-image: url('../images/gift-background.jpg');
+  background-size: cover;
+  height: 500px
+}
+
 .marca-item {
+  padding: 2% 0 0 8%;
   width: 40%;
 }
 
@@ -259,20 +262,28 @@ background-color: #FFDFA2;
   text-align: center;
 }
 
+.marca-item .icons-redes li {
+    display: inline-block;
+}
+
 .icons-redes {
   list-style-type: none;
+  text-align: center;
   padding-left: 0;
 }
 
 .icons-redes li {
-  display: inline-block;
-  margin-right: 20px;
+  padding: 5px;
+}
+
+.contacto .icons-redes i:after {
+  content: '/';
+  margin: 0 8px;
+
 }
 
 .contacto {
   padding-bottom: 0;
-}
-.marcas {
 }
 
 .background-fucsia {
@@ -296,6 +307,10 @@ background-color: #FFDFA2;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.contacto input:focus, .contacto textarea:focus {
+  outline: 2px solid #551a8b;
 }
 
 .logo-img {
@@ -329,16 +344,13 @@ background-color: #FFDFA2;
 
 .contacto-detalle .icons-redes {
   display: block;
+  padding-left: 5%;
   text-align: center;
 }
 
 .formulario {
   display: flex;
   flex-direction: column;
-}
-
-:focus {
-  outline: 2px solid #551a8b;
 }
 
 .formulario label {
