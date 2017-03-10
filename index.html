@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Angiraldo | industrial design | graphic design | photography </title>
   <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -13,8 +13,9 @@
     <header class="header">
       <div class="contenedor">
         <figure class="logotipo"><a href="#"><img src="images/angiraldo.png" alt="Angiraldo logotipo" width="210" heigth="50" /></a></figure>
-        <nav class="menu">
-          <ul>
+        <span id="menu-button" class="menu-button icon fa fa-bars"></span>
+        <nav>
+          <ul id="menu" class="menu">
             <li><a data-scroll href="#acerca">Acerca de mi</a></li>
             <li><a data-scroll href="#portafolio">Portafolio</a></li>
             <li><a data-scroll href="#contacto">Contacto</a></li>
@@ -32,7 +33,7 @@
     </div>
   </section>
   <section id="acerca" class="acerca contenedor padding">
-    <h2 class="titulo naranja">Acerca de mi</h2>
+    <h2 class="titulo fucsia">Acerca de mi</h2>
     <div class="contenedor">
       <div class="foto-perfil">
         <img src="images/perfil.jpg" alt="Perfil Angiraldo" />
@@ -64,8 +65,8 @@
     </div>
   </section>
   <section id="portafolio" class="portafolio padding">
-    <h2 class="titulo amarillo">Portafolio</h2>
-    <div class="background-pastel">
+    <h2 class="titulo fucsia">Portafolio</h2>
+    <div>
     <div class="contenedor">
       <div class="portafolio-item">
         <div><img src="images/barbacoa.jpg" alt="Barbacoa" /></div>
@@ -98,8 +99,8 @@
     </div>
     </div>
   </section>
-  <section id="contacto" class="contacto padding">
-    <h2 class="titulo fucsia">Contacto<span></span></h2>
+  <section id="contacto" class="contacto">
+    <h2 class="titulo fucsia padding">Contacto<span></span></h2>
     <div class="background-fucsia">
       <div class="contenedor">
       <div class="contacto-info">
@@ -130,8 +131,18 @@
   </section>
 <div class="rights">© Steven Giraldo 2017</div>
 <script src="js/smooth-scroll.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 <script>
-    smoothScroll.init();
+  smoothScroll.init();
+$(function () {
+  /* Menu responsive */
+  var $menuButton = $('#menu-button');
+  var $menu = $('#menu');
+  $menuButton.on('touchstart', function() {
+    $menu.toggleClass('active');
+    $menuButton.toggleClass('icon-close');
+  });
+});
 </script>
 </body>
 </html>
