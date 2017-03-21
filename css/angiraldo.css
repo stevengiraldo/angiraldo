@@ -126,9 +126,17 @@ body {
 .titulo-a {
   color: white;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
   margin-top: 20px;
+}
+
+.titulo-a p {
+  margin: 0;
+}
+
+.titulo-a span {
+  color: #FFD000;
 }
 
 .titulo {
@@ -178,9 +186,9 @@ body {
 }
 
 .foto-perfil img {
-  border: 3px solid #ff007d;
-  border-radius: 50%;
+  border-bottom: 3px solid #ff007d;
   padding: 4px;
+  max-height: 300px;
 }
 
 .descripcion {
@@ -196,6 +204,16 @@ body {
   margin-top: 0;
 }
 
+.descripcion p i {
+  vertical-align: middle;
+  font-size: .8em;
+}
+
+.descripcion p > a {
+  font-size: .9em;
+  color: #000;
+}
+
 .portafolio {
   padding-bottom: 24px;
 }
@@ -205,6 +223,18 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 0 1em;
+}
+
+.portafolio .contenedor > p {
+  font-size: 1.2em;
+  margin-top: 0;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.portafolio .contenedor > p i {
+  color: #000;
+  font-size: .8em;
 }
 
 .portafolio-item {
@@ -230,6 +260,7 @@ body {
 
 .portafolio-caption {
   padding: 1em;
+  position: relative;
 }
 
 .portafolio-caption * {
@@ -244,6 +275,26 @@ body {
 
 .portafolio-caption h4 {
   font-weight: normal;
+}
+
+.portafolio-caption p {
+  text-align: justify;
+  font-size: .9em;
+}
+
+.portafolio-item span {
+  text-align: right;
+  display: block;
+}
+
+.tag {
+  position: absolute;
+  top: -27px;
+  right: 0px;
+  font-size: .8em;
+  padding: 5px 20px;
+  background-color: rgba(0, 0, 0, .7);
+  color: #FFF;
 }
 
 .marca-title {
@@ -399,6 +450,12 @@ body {
   margin: 0 auto;
 }
 
+.formulario > p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+}
+
 .rights {
   background-color: #e2016f;
   color: white;
@@ -411,6 +468,16 @@ body {
   content: "\f00d";
 }
 
+.ver-mas {
+  color: #FF007D;
+  padding-top: 5px;
+  text-decoration: none;
+}
+
+.ver-mas i {
+  vertical-align: middle;
+}
+
 /*  -------------- Media Queries --------------  */
 @media screen and (max-width: 800px) {
   .marca-item {
@@ -418,6 +485,9 @@ body {
   }
   .formulario {
     width: auto;
+  }
+  .portafolio-item:hover img {
+    transform: none;
   }
 }
 
@@ -468,6 +538,10 @@ body {
   }
   .background {
     margin-top: -65px;
+  }
+
+  .marca-img img {
+    max-width: 150px;
   }
 
   .contacto .contenedor {
