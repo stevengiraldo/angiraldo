@@ -463,6 +463,10 @@ body {
   text-align: center;
   padding: 1em;
 }
+.rights a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .icon-close:before {
   content: "\f00d";
@@ -476,6 +480,24 @@ body {
 
 .ver-mas i {
   vertical-align: middle;
+}
+
+.otros-proyectos {
+  text-align: center;
+}
+
+.otros-proyectos .btn {
+    border: 2px solid #ff007d;
+    color: #ff007d;
+    display: inline-block;
+    padding: 8px 12px;
+    line-height: 20px;
+    transition: .3s;
+    text-decoration: none;
+}
+.otros-proyectos .btn:hover {
+    background-color: #ff007d;
+    color: #FFF;
 }
 
 /*  -------------- Media Queries --------------  */
