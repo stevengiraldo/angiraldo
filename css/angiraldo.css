@@ -297,55 +297,6 @@ body {
   color: #FFF;
 }
 
-.marca-title {
-  font-size: 20px;
-  margin-bottom: .5em;
-  text-align: center;
-}
-
-.background-gift {
-  background-image: url('../images/gift-background.jpg');
-  background-size: cover;
-  /*height: 500px*/
-}
-
-.marca-item {
-  padding: 5%;
-  max-width: 500px;
-}
-
-.marca-item .icons-redes i {
-  border: 2px solid #551a8b;
-  border-radius: 50%;
-  color: #551a8b;
-  height: 20px;
-  padding: 8px;
-  width: 20px;
-  font-size: 25px;
-  line-height: 20px;
-  vertical-align: middle;
-  text-align: center;
-  transition: .3s;
-}
-
-.marca-item .icons-redes i:hover {
-  background-color: #551a8b;
-  color: #FFF;
-}
-
-.marca-item h4 {
-  font-style: italic;
-  margin-top: 0;
-  text-align: center;
-}
-.marca-img {
-  text-align: center;
-}
-
-.marca-item .icons-redes li {
-    display: inline-block;
-}
-
 .icons-redes {
   list-style-type: none;
   text-align: center;
@@ -502,9 +453,6 @@ body {
 
 /*  -------------- Media Queries --------------  */
 @media screen and (max-width: 800px) {
-  .marca-item {
-    margin: 0 auto;
-  }
   .formulario {
     width: auto;
   }
@@ -560,10 +508,6 @@ body {
   }
   .background {
     margin-top: -65px;
-  }
-
-  .marca-img img {
-    max-width: 150px;
   }
 
   .contacto .contenedor {
