@@ -19,7 +19,7 @@ body {
 .button {
   border-radius: 8px;
   border: none;
-  background: #ffd000;
+  background: #BFA7D0;
   color: black;
   padding: 7px 12px;
   cursor: pointer;
@@ -57,7 +57,7 @@ body {
 }
 
 .menu li a {
-  color: #e11379;
+  color: #532C81;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
@@ -79,7 +79,7 @@ body {
   bottom: -10%;
   left: 40%;
   position: absolute;
-  background-color: #e11379;
+  background-color: #532C81;
   transition: .3s;
 }
 
@@ -90,7 +90,7 @@ body {
   line-height: 40px;
   border-radius: 50%;
   text-align: center;
-  background-color: #e11379;
+  background-color: #532C81;
   position: fixed;
   cursor: pointer;
   color: white;
@@ -104,10 +104,10 @@ body {
   display: flex;
   height: 600px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffce37+0,ff007d+100 */
-  background: #ffce37; /* Old browsers */
-  background: -moz-linear-gradient(top,  #ffce37 0%, #ff007d 70%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  #ffce37 0%,#ff007d 70%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  #ffce37 0%,#ff007d 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: #BFA7D0; /* Old browsers */
+  background: -moz-linear-gradient(top,  #BFA7D0 0%, #532C81 70%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #BFA7D0 0%,#532C81 70%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #BFA7D0 0%,#532C81 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 .logo {
@@ -159,13 +159,13 @@ body {
 }
 
 .contacto .titulo.fucsia {
-  background-color: #ff007d;
+  background-color: #532C81;
   color: #FFF;
   margin-bottom: 0;
 }
 
 .portafolio .titulo.fucsia:after, .acerca .titulo.fucsia:after {
-  color: #ff007d;
+  color: #532C81;
 }
 
 .titulo.naranja:after {
@@ -186,7 +186,7 @@ body {
 }
 
 .foto-perfil img {
-  border-bottom: 3px solid #ff007d;
+  border-bottom: 3px solid #532C81;
   padding: 4px;
   max-height: 300px;
 }
@@ -197,7 +197,7 @@ body {
 }
 
 .descripcion span {
-  color: #e11379;
+  color: #532C81;
 }
 
 .descripcion p:first-child {
@@ -318,7 +318,7 @@ body {
 }
 
 .background-fucsia {
-  background-color: #ff007d;
+  background-color: #532C81;
   color: white;
   padding: 36px 0;
 }
@@ -408,7 +408,7 @@ body {
 }
 
 .rights {
-  background-color: #e2016f;
+  background-color: #532C81;
   color: white;
   font-size: 10px;
   text-align: center;
@@ -424,7 +424,7 @@ body {
 }
 
 .ver-mas {
-  color: #FF007D;
+  color: #532C81;
   padding-top: 5px;
   text-decoration: none;
 }
@@ -438,8 +438,8 @@ body {
 }
 
 .otros-proyectos .btn {
-    border: 2px solid #ff007d;
-    color: #ff007d;
+    border: 2px solid #532C81;
+    color: #532C81;
     display: inline-block;
     padding: 8px 12px;
     line-height: 20px;
@@ -447,7 +447,7 @@ body {
     text-decoration: none;
 }
 .otros-proyectos .btn:hover {
-    background-color: #ff007d;
+    background-color: #532C81;
     color: #FFF;
 }
 
